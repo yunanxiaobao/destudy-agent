@@ -1,0 +1,132 @@
+# Structured database of German M.Sc. programs.
+# Deadlines are stored as "MM-DD" for non-EU / Chinese applicants (used by build_timeline).
+# Expand by appending more entries + adding corresponding crawl sources in data_pipeline/sources.yaml.
+
+programs:
+  - id: tuda-cs
+    university: TU Darmstadt
+    name: M.Sc. Computer Science
+    city: Darmstadt
+    state: Hesse
+    field: Computer Science
+    degree: M.Sc.
+    ects: 120
+    duration_semesters: 4
+    teaching_language: [English]
+    intakes: [WS, SS]
+    deadlines:
+      WS: "07-15"
+      SS: "01-15"
+    deadline_note: >
+      Portal opens June 1 (WS) / Dec 1 (SS); online application AND arrival of hard-copy
+      documents due July 15 / Jan 15. GRE/GATE exemption scores due Aug 20 (WS) / Feb 20 (SS).
+    portal: TUCaN (online + hard-copy documents)
+    tuition_non_eu_eur_per_semester: 0
+    semester_fee_note: No tuition fees in Hesse; semester contribution applies.
+    language_requirement: English (see International Admission Office requirements)
+    gre_requirement: >
+      Optional for exemption from the on-campus Entrance Exam (if competencies cannot be
+      verified from documents): Verbal >= 155, Quant >= 165, AW >= 3.5 (ETS code 2249 / 0402),
+      or GATE >= 750.
+    aps_required: true
+    notes: >
+      You may apply to ONLY ONE of TU Darmstadt's English-taught CS/AIML/IT-Security Master's
+      programs per admission cycle. On-campus Entrance Exam (90 min, early Sep / early Mar)
+      has no remote option and no rescheduling.
+    url: https://www.informatik.tu-darmstadt.de/studium_fb20/vor_dem_studium/bewerbung_1/bewerbung_2.en.jsp
+    verified_at: "2026-11-23"
+
+  - id: tud-cs
+    university: TU Dresden
+    name: M.Sc. Computer Science
+    city: Dresden
+    state: Saxony
+    field: Computer Science
+    degree: M.Sc.
+    ects: 120
+    duration_semesters: 4
+    teaching_language: [English]
+    intakes: [WS, SS]
+    deadlines:
+      WS: "05-31"
+      SS: "11-30"
+    deadline_note: >
+      Applicants with foreign HZB apply via uni-assist Apr 1–May 31 (WS) / Oct 1–Nov 30 (SS).
+      Aptitude assessment portal: Jun 1–Jul 15 (WS) / Dec 1–Jan 15 (SS).
+    portal: uni-assist (foreign HZB) + TU Dresden Aptitude Assessment Portal (use same email)
+    tuition_non_eu_eur_per_semester: 0
+    semester_fee_note: No tuition fees in Saxony; semester contribution applies.
+    language_requirement: >
+      English C1: IELTS >= 7.0 (all >= 6.0), TOEFL iBT >= 100 (all >= 20; or >= 5.0 with all >= 4.0
+      on the 2026 scale), PTE >= 78 (all >= 65), or Cambridge C1.
+    gre_requirement: Strongly recommended for non-EU/EEA Bachelor's graduates.
+    aps_required: true
+    notes: >
+      Requires 90 non-overlapping ECTS (OS/Networks/DB/Security >= 20, Theoretical CS/Algo >= 10,
+      Math >= 20, Computer Architecture/HPC >= 5, Programming/SE/HCI/Graphics >= 25, +10 flexible).
+      Binary aptitude decision (no conditional admission). Detailed official module handbook
+      with URLs or university stamp/signature is mandatory. 80% credit certificate accepted.
+    url: https://tu-dresden.de/ing/informatik/studium/studienangebot/master-studiengaenge/m-sc-computer-science/admission?set_language=en
+    verified_at: "2026-11-23"
+
+  - id: kit-cs
+    university: KIT (Karlsruhe Institute of Technology)
+    name: M.Sc. Computer Science (International)
+    city: Karlsruhe
+    state: Baden-Württemberg
+    field: Computer Science
+    degree: M.Sc.
+    ects: 120
+    duration_semesters: 4
+    teaching_language: [English, German]
+    intakes: [WS, SS]
+    deadlines:
+      WS: "06-15"
+      SS: "01-15"
+    deadline_note: Application deadline June 15 (WS) / January 15 (SS).
+    portal: KIT International Students Office online portal (machine-readable PDFs, no duplicates)
+    tuition_non_eu_eur_per_semester: 1500
+    semester_fee_note: Baden-Württemberg non-EU tuition 1,500 EUR/semester plus semester fees.
+    language_requirement: Sufficient English for International track (check KIT ISO page for exact proof).
+    gre_requirement: >
+      Mandatory for Bachelor's degrees from non-Lisbon Convention countries (incl. China):
+      GRE Verbal >= 151, Quant >= 164, AW >= 4.0 (<= 5 yrs old), or GATE in CS/IT or DS/AI (<= 3 yrs).
+    aps_required: true
+    notes: >
+      Direct admission requires Theoretical CS (15 CP), Practical CS (30 CP), Computer Engineering (8 CP),
+      Mathematics (25 CP). Otherwise, candidates meeting 3/4 areas (15/20/6/20 LP) AND proving top 10%
+      class rank may be invited to an English selection interview (0-60 pts, >= 30 to pass).
+    url: https://www.informatik.kit.edu/english/14346.php
+    verified_at: "2026-11-23"
+
+  - id: freiburg-cs
+    university: University of Freiburg
+    name: M.Sc. Computer Science
+    city: Freiburg im Breisgau
+    state: Baden-Württemberg
+    field: Computer Science / Artificial Intelligence / Cyber-Physical Systems
+    degree: M.Sc.
+    ects: 120
+    duration_semesters: 4
+    teaching_language: [English]
+    intakes: [WS, SS]
+    deadlines:
+      WS: "05-31"
+      SS: "12-15"
+    deadline_note: >
+      Non-EU: Apr 15–May 31 (WS) / Nov 1–Dec 15 (SS).
+      EU: Apr 15–Jul 15 (WS) / Nov 1–Jan 15 (SS).
+    portal: University of Freiburg online application portal
+    tuition_non_eu_eur_per_semester: 1500
+    semester_fee_note: Non-EU total 1,690 EUR/semester (1,500 EUR tuition + 190 EUR fees).
+    language_requirement: >
+      English C1: Academic IELTS >= 7.0, TOEFL iBT >= 95 (or 5.0 on 2026 scale),
+      PTE >= 76, Cambridge CAE/CPE. MOI certificate is NOT accepted.
+    gre_requirement: Optional (recommended; all three sections considered useful).
+    aps_required: true
+    notes: >
+      Three tracks: Open Curriculum, Specialization in Artificial Intelligence, Specialization in
+      Cyber-Physical Systems. APS certificate is mandatory for China/India/Vietnam and CANNOT be
+      submitted after the application deadline. Optional docs must be merged into one PDF.
+    url: https://www.tf.uni-freiburg.de/en/study-programs/computer-science/m-sc-computer-science
+    verified_at: "2026-11-23"

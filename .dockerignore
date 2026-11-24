@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+.env
+.DS_Store
+data/raw/
+data/traces.jsonl
+data/profile.json
+evaluation/results/

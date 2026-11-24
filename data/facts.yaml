@@ -1,0 +1,23 @@
+# Curated facts used by deterministic tools. Values change over time:
+# always keep `as_of` and `source` up to date.
+
+blocked_account:
+  monthly_eur: 992
+  as_of: "2025-2026 (verify before applying)"
+  source: https://china.diplo.de/  # German missions in China – student visa / Sperrkonto
+  note: >
+    Students (§16b AufenthG) must prove ~992 EUR/month (11,904 EUR/year). Providers
+    (Fintiba, Expatrio, Coracle, ...) charge setup/monthly fees on top. The amount
+    follows BAföG and is adjusted by the government – re-check the embassy page.
+
+# Rough durations (in weeks) used by build_timeline. These are planning
+# estimates, NOT official processing times.
+durations_weeks:
+  aps: 12            # APS certificate (submission -> certificate)
+  language_test: 8   # register for IELTS/TOEFL + receive score
+  uni_assist_vpd: 6  # uni-assist / VPD processing
+  visa_appointment: 6
+  visa_processing: 6
+  blocked_account: 2
+  health_insurance: 1
+  housing_search: 12

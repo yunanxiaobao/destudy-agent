@@ -1,0 +1,157 @@
+# Crawl sources (BFS from seeds, robots.txt aware, denoised).
+# Add new universities here + run `python -m data_pipeline.crawl --only <id>`
+# and `python -m data_pipeline.extract_programs --only <id>`.
+
+defaults:
+  max_pages: 15
+  max_depth: 2
+  delay_seconds: 0.8
+
+sources:
+  # ---------- Original 4 target programs ----------
+  - id: tuda-cs
+    category: program
+    university: TU Darmstadt
+    program: M.Sc. Computer Science
+    max_pages: 15
+    seeds:
+      - https://www.informatik.tu-darmstadt.de/studium_fb20/vor_dem_studium/bewerbung_1/bewerbung_2.en.jsp
+      - https://www.tu-darmstadt.de/studieren/studieninteressierte/bewerbung_zulassung_tu/bewerbungsfristen/index.en.jsp
+      - https://www.tu-darmstadt.de/studieren/studieninteressierte/bewerbung_zulassung_tu/internationale_studierende/index.en.jsp
+    allow_prefixes:
+      - https://www.informatik.tu-darmstadt.de/studium_fb20/vor_dem_studium/
+      - https://www.tu-darmstadt.de/studieren/studieninteressierte/bewerbung_zulassung_tu/
+    link_keywords: [bewerbung, application, master, zulassung, admission, apply, language, sprach, deadline, frist, international, entrance]
+    exclude_keywords: [bachelor, lehramt, doktor, promotion, studienkolleg]
+
+  - id: tud-cs
+    category: program
+    university: TU Dresden
+    program: M.Sc. Computer Science
+    max_pages: 15
+    seeds:
+      - https://tu-dresden.de/ing/informatik/studium/studienangebot/master-studiengaenge/m-sc-computer-science/admission?set_language=en
+      - https://tu-dresden.de/ing/informatik/studium/studienangebot/master-studiengaenge/m-sc-computer-science?set_language=en
+    allow_prefixes:
+      - https://tu-dresden.de/ing/informatik/studium/studienangebot/master-studiengaenge/m-sc-computer-science
+      - https://tu-dresden.de/studium/vor-dem-studium/bewerbung
+    link_keywords: [admission, application, bewerbung, zulassung, apply, language, deadline, eignung, aptitude, requirement, m-sc-computer-science]
+
+  - id: kit-cs
+    category: program
+    university: KIT (Karlsruhe Institute of Technology)
+    program: M.Sc. Computer Science
+    max_pages: 12
+    seeds:
+      - https://www.informatik.kit.edu/english/14346.php
+    allow_prefixes:
+      - https://www.informatik.kit.edu/english/
+      - https://www.intl.kit.edu/istudies/
+    link_keywords: [master, bewerbung, application, admission, zulassung, apply, language, deadline, interview, gre, fees]
+
+  - id: freiburg-cs
+    category: program
+    university: University of Freiburg
+    program: M.Sc. Computer Science
+    max_pages: 10
+    seeds:
+      - https://www.tf.uni-freiburg.de/en/study-programs/computer-science/m-sc-computer-science
+    allow_prefixes:
+      - https://www.tf.uni-freiburg.de/en/study-programs/computer-science/
+      - https://www.tf.uni-freiburg.de/en/studies-and-teaching/
+    link_keywords: [m-sc-computer-science, admission, application, apply, language, deadline, requirement, master, english]
+
+  # ---------- Expanded top German CS / AI universities ----------
+  - id: tum-cs
+    category: program
+    university: Technical University of Munich (TUM)
+    program: M.Sc. Informatics (Computer Science)
+    max_pages: 10
+    max_depth: 1
+    seeds:
+      - https://www.tum.de/en/studies/degree-programs/detail/informatics-master-of-science-msc
+      - https://www.tum.de/en/studies/application/master
+    allow_prefixes:
+      - https://www.tum.de/en/studies/degree-programs/detail/informatics
+      - https://www.tum.de/en/studies/application/
+      - https://www.tum.de/en/studies/fees-and-financial-aid/
+    link_keywords: [master, application, admission, deadline, language, vpd, tuition, fee, aptitude, document, informatics]
+
+  - id: rwth-cs
+    category: program
+    university: RWTH Aachen University
+    program: M.Sc. Computer Science
+    max_pages: 10
+    max_depth: 1
+    seeds:
+      - https://www.rwth-aachen.de/cms/root/studium/Vor-dem-Studium/Studiengaenge/Liste-Aktuelle-Studiengaenge/Studiengangbeschreibung/~bnhn/Informatik-M-Sc/?lidx=1
+    allow_prefixes:
+      - https://www.rwth-aachen.de/cms/root/studium/Vor-dem-Studium/
+      - https://www.rwth-aachen.de/go/id/
+    link_keywords: [informatik, computer, master, bewerbung, application, admission, deadline, frist, gre, language, international]
+
+  - id: stuttgart-cs
+    category: program
+    university: University of Stuttgart
+    program: M.Sc. Computer Science
+    max_pages: 10
+    max_depth: 1
+    seeds:
+      - https://www.uni-stuttgart.de/en/study/study-programs/Computer-Science-M.Sc./
+    allow_prefixes:
+      - https://www.uni-stuttgart.de/en/study/study-programs/Computer-Science-M.Sc.
+      - https://www.uni-stuttgart.de/en/study/application/
+    link_keywords: [computer-science, master, application, admission, deadline, language, tuition, requirement, international]
+
+  - id: tub-cs
+    category: program
+    university: Technical University of Berlin (TU Berlin)
+    program: M.Sc. Computer Science (Informatik)
+    max_pages: 10
+    max_depth: 1
+    seeds:
+      - https://www.tu.berlin/en/studying/study-programs/all-programs-offered/study-course/computer-science-informatik-m-sc
+    allow_prefixes:
+      - https://www.tu.berlin/en/studying/study-programs/all-programs-offered/study-course/computer-science-informatik-m-sc
+      - https://www.tu.berlin/en/studying/applying-and-enrolling/
+    link_keywords: [computer-science, master, applying, application, admission, deadline, language, uni-assist, requirement]
+
+  # ---------- General German application knowledge ----------
+  - id: daad
+    category: general
+    university: ""
+    program: ""
+    max_pages: 20
+    seeds:
+      - https://www.daad.de/en/studying-in-germany/requirements/
+      - https://www.daad.de/en/studying-in-germany/plan-your-studies/
+      - https://www.daad.de/en/studying-in-germany/plan-your-stay/
+    allow_prefixes:
+      - https://www.daad.de/en/studying-in-germany/
+    link_keywords: [requirement, application, apply, visa, language, finance, insurance, admission, recognition, blocked, residence, tuition, deadline, master]
+    exclude_keywords: [ib-diploma, gce]
+
+  - id: uni-assist
+    category: general
+    university: ""
+    program: ""
+    max_pages: 18
+    seeds:
+      - https://www.uni-assist.de/en/
+    allow_prefixes:
+      - https://www.uni-assist.de/en/
+    link_keywords: [how-to-apply, apply, application, documents, vpd, fees, deadline, aps, tools, faq, certif, country-by-country]
+    exclude_keywords: [staatsexamen, bachelor-staatsexamen, undergraduate-studies, glossary-of-terms/description/term/bachelor]
+
+  - id: aps-china
+    category: general
+    university: ""
+    program: ""
+    max_pages: 18
+    seeds:
+      - https://www.aps.org.cn/
+      - https://www.aps.org.cn/zh
+    allow_prefixes:
+      - https://www.aps.org.cn/
+    link_keywords: [aps, verfahren, procedure, faq, entgelte, visum, shanghai, studium-in-deutschland, bewertungsvorschlaege, uber-uns]
+    exclude_keywords: ["/bel", "/osterreich", "/schweiz", "internationale-kooperationen"]

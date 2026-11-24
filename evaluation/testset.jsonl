@@ -1,0 +1,30 @@
+{"question": "TU Darmstadt 计算机硕士的冬季学期和夏季学期申请截止日期分别是几号？", "relevant": ["bewerbung_2.en.jsp", "July 15", "January 15"], "university": "TU Darmstadt"}
+{"question": "申请 TU Darmstadt 英语授课的计算机硕士，GRE 达到多少分可以免考入学考试？", "relevant": ["Verbal Reasoning", "155", "165", "2249"], "university": "TU Darmstadt"}
+{"question": "TU Darmstadt 的计算机硕士入学考试（Entrance Exam）可以线上远程参加吗？", "relevant": ["No remote participation", "exclusively in person", "pre-configured university computers"], "university": "TU Darmstadt"}
+{"question": "同一个申请季可以同时申请 TU Darmstadt 的 Computer Science 和 AI & ML 两个英语硕士项目吗？", "relevant": ["apply **for only one**", "only one of the English-taught"], "university": "TU Darmstadt"}
+{"question": "TU Darmstadt 的 GRE 豁免成绩最晚什么时候提交？ETS 送分代码是什么？", "relevant": ["August 20", "February 20", "2249"], "university": "TU Darmstadt"}
+{"question": "TU Darmstadt 硕士申请审核一般需要多长时间？能不能还没有本科毕业证就先申请？", "relevant": ["6-8 weeks", "without a Bachelor's degree certificate"], "university": "TU Darmstadt"}
+{"question": "TU Darmstadt 网上申请门户叫什么？", "relevant": ["TUCaN"], "university": "TU Darmstadt"}
+{"question": "TU Dresden 计算机硕士对外国本科（如中国学生）的冬季和夏季申请截止日期是什么？", "relevant": ["01.04.–31.05.", "01.10.–30.11.", "31.05"], "university": "TU Dresden"}
+{"question": "TU Dresden 计算机硕士的英语语言要求是多少？雅思和托福各要多少分？", "relevant": ["IELTS", "7.0", "TOEFL", "100", "C1 CEFR"], "university": "TU Dresden"}
+{"question": "TU Dresden 计算机硕士专业课学分（ECTS）要求怎么分配？总共要多少学分？", "relevant": ["90 credit points", "at least 20 credit points on operating systems", "at least 25 credit points on programming"], "university": "TU Dresden"}
+{"question": "TU Dresden 计算机硕士的适应性评估（aptitude assessment）会不会发带条件录取（补课录取）？", "relevant": ["binary", "not** possible to impose conditions", "only accepted or rejected"], "university": "TU Dresden"}
+{"question": "申请 TU Dresden 计算机硕士时，非欧盟本科毕业生需要考 GRE 吗？", "relevant": ["strongly recommend", "GRE", "outside the EU"], "university": "TU Dresden"}
+{"question": "本科还没毕业、没拿到学位证，能申请 TU Dresden 的计算机硕士吗？", "relevant": ["80% certificate", "80% of the credit points"], "university": "TU Dresden"}
+{"question": "TU Dresden 申请时课程描述（module handbook）怎么提交？如果学校官网没有链接怎么办？", "relevant": ["stamp and signature", "module handbook"], "university": "TU Dresden"}
+{"question": "TU Dresden 怎么把国内学分换算成 ECTS？公式是什么？", "relevant": ["U = 60 x D / CS", "conversion factor"], "university": "TU Dresden"}
+{"question": "TU Dresden 计算机硕士的申请分哪两步？分别用什么系统？", "relevant": ["uni-assist", "portal for aptitude assessment", "selma"], "university": "TU Dresden"}
+{"question": "KIT 卡尔斯鲁厄理工学院计算机硕士的冬季和夏季申请截止日期是几号？", "relevant": ["June 15", "January 15"], "university": "KIT"}
+{"question": "中国本科申请 KIT 计算机硕士必须提交 GRE 吗？各部分最低分数要求是多少？", "relevant": ["151", "164", "Lissabon convention"], "university": "KIT"}
+{"question": "KIT 计算机硕士直接录取需要满足哪四个学科领域的学分要求？", "relevant": ["Theoretical Computer Science (15 CP)", "Practical Computer Science (30 CP)", "Mathematics (25 CP)"], "university": "KIT"}
+{"question": "如果不满足 KIT 计算机硕士的直接录取学分条件，什么情况下可以被邀请参加选拔面试？面试满分多少、多少分及格？", "relevant": ["best 10%", "0 to 60 points", "less than 30 points"], "university": "KIT"}
+{"question": "弗莱堡大学（University of Freiburg）计算机硕士非欧盟学生每学期学费和总费用是多少？", "relevant": ["1500", "1690", "Non-EU nationals"], "university": "Freiburg"}
+{"question": "弗莱堡大学计算机硕士非欧盟学生的冬季和夏季学期申请截止日期是什么？", "relevant": ["May 31", "December 15", "April 15"], "university": "Freiburg"}
+{"question": "弗莱堡大学计算机硕士接受哪些英语成绩？全英文授课证明（MOI）可以豁免雅思托福吗？", "relevant": ["minimum ibT score 95", "medium of instruction", "not** sufficient"], "university": "Freiburg"}
+{"question": "中国学生申请弗莱堡大学计算机硕士时，APS 证书可以等截止日期之后再补交吗？", "relevant": ["APS certificate", "not possible to submit the APS certificate after the application deadline"], "university": "Freiburg"}
+{"question": "弗莱堡大学计算机硕士有哪些专业方向（Specialization）？", "relevant": ["Specialization in Artificial Intelligence", "Cyber-Physical Systems", "Open Curriculum"], "university": "Freiburg"}
+{"question": "APS 留德审核部一般国内申请人程序（C-Verfahren）的审核费用是多少人民币？", "relevant": ["2500", "entgelte", "Chinaverfahren"], "university": null}
+{"question": "德国驻上海总领事馆留德人员审核部负责哪些省市申请人的审核和签证？", "relevant": ["江苏、安徽、浙江、上海", "aps-am-gk-shanghai"], "university": null}
+{"question": "APS 审核部全称是什么？什么情况下可以通过 APS 递交德国留学签证？", "relevant": ["德国大使馆文化处留德人员审核部", "visum-fur-deutschland", "已通过APS审核"], "university": null}
+{"question": "什么是 uni-assist？申请德国大学时在 My assist 可以注册多个账号吗？", "relevant": ["uni-assist", "multiple accounts", "only one My assist account"], "university": null}
+{"question": "德国留学签证（Visa）和医疗保险（Health Insurance）的基本要求是什么？", "relevant": ["living-in-germany/visa", "living-in-germany/health-insurance"], "university": null}

@@ -1,0 +1,12 @@
+{"question": "我国内本科百分制均分 85 分，换算成德国分数是多少？", "expected_tools": ["convert_grade"], "must_contain": ["2.1"]}
+{"question": "德国留学签证办自保金（Sperrkonto）存 12 个月一共需要存多少欧元？", "expected_tools": ["calc_blocked_account"], "must_contain": ["11904", "992"], "match_mode": "any"}
+{"question": "帮我从项目库里找免学费（非欧盟 0 欧元）、冬季入学的德国 Artificial Intelligence 或 Machine Learning 方向英语硕士。", "expected_tools": ["search_programs"], "must_contain": ["Artificial Intelligence", "Machine Learning"], "match_mode": "any"}
+{"question": "项目库里目前一共收录了多少个德国硕士项目？覆盖了多少所大学？", "expected_tools": ["get_program_stats"], "must_contain": ["1611", "191"]}
+{"question": "TU Darmstadt 英语授课计算机硕士，GRE 考到多少分可以免考入学考试？ETS 送分代码是多少？", "expected_tools": ["search_knowledge"], "must_contain": ["155", "165", "2249"]}
+{"question": "弗莱堡大学计算机硕士非欧盟学生每学期学费和总费用一共多少欧元？", "expected_tools": ["search_knowledge"], "must_contain": ["1500", "1690"]}
+{"question": "我想申请 2027 冬季学期（WS2027）的 TU Dresden 和 KIT 计算机硕士，我还没有 APS 也没有雅思成绩，帮我排一份申请时间表。", "expected_tools": ["build_timeline"], "must_contain": ["APS", "2027"]}
+{"question": "我本科计算机 GPA 3.4/4.0（及格分 1.0），想同时了解：1）我的德国分是多少；2）中国本科申 KIT 计算机硕士必须交 GRE 吗，各科最低分是多少？", "expected_tools": ["convert_grade", "search_knowledge"], "must_contain": ["1.6", "151", "164"]}
+{"question": "TU Dresden 计算机硕士对英语雅思成绩的具体要求是什么？是否接受带条件录取？", "expected_tools": ["search_knowledge"], "must_contain": ["7.0", "6.0"]}
+{"question": "APS 留德审核部一般国内申请人程序（C-Verfahren）的审核费是多少人民币？", "expected_tools": ["search_knowledge"], "must_contain": ["2500"]}
+{"question": "请帮我查一下弗莱堡大学和 TU Dresden 这两所计算机硕士，哪一所不收非欧盟学费，且两所的非欧盟冬季截止日期分别是几号？", "expected_tools": ["search_programs"], "must_contain": ["TU Dresden", "5", "31"]}
+{"question": "请问德国驻成都总领事馆 APS 审核加急通道的官方收费标准是多少？如果资料里没查到请直接告诉我。", "expected_tools": ["search_knowledge"], "must_contain": ["未", "没有", "无法", "查不到"], "match_mode": "any"}

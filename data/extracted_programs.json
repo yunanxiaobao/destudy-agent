@@ -1,0 +1,101 @@
+[
+  {
+    "id": "tum-cs",
+    "university": "Technical University of Munich (TUM)",
+    "name": "Informatics",
+    "city": "Munich",
+    "state": "Bavaria",
+    "field": "Informatics (Computer Science)",
+    "degree": "M.Sc.",
+    "ects": null,
+    "duration_semesters": 4,
+    "teaching_language": [
+      "English"
+    ],
+    "intakes": [
+      "WS",
+      "SS"
+    ],
+    "deadline_ws": "05-31",
+    "deadline_ss": "11-30",
+    "deadline_note": "Application periods: winter semester 01.02–31.05; summer semester 01.10–30.11. Apply through TUMonline.",
+    "portal": "https://www.tumonline.tum.de/",
+    "tuition_non_eu_eur": 6000,
+    "semester_fee_note": "The semester fee is payable in addition to tuition and varies by study location. Tuition stated is for full-time study; part-time tuition is charged proportionately.",
+    "ielts_min": null,
+    "toefl_min": null,
+    "language_requirement": "Sufficient English language skills are required, with evidence submitted before the application deadline. The specific minimum score is not stated.",
+    "gre_policy": "unknown",
+    "gre_requirement": "No GRE requirement is stated in the provided text.",
+    "aps_required": true,
+    "notes": "Applicants need a recognized undergraduate degree and must pass a two-part aptitude assessment. Grades and written application documents are assessed using a point system; applicants may be admitted, rejected, or invited to an admissions interview. International applicants with qualifications obtained outside Germany generally need a uni-assist Preliminary Documentation (VPD), depending on their circumstances; they must also apply directly through TUMonline.",
+    "url": "https://www.tum.de/en/studies/degree-programs/detail/informatics-master-of-science-msc",
+    "source_type": "llm_extracted",
+    "verified_at": "2026-11-23"
+  },
+  {
+    "id": "rwth-cs",
+    "university": "RWTH Aachen University",
+    "name": "M.Sc. Computer Science",
+    "city": "Aachen",
+    "state": "North Rhine-Westphalia",
+    "field": "Computer Science",
+    "degree": "M.Sc.",
+    "ects": null,
+    "duration_semesters": null,
+    "teaching_language": [
+      "English"
+    ],
+    "intakes": [],
+    "deadline_ws": "03-01",
+    "deadline_ss": "09-01",
+    "deadline_note": "General deadlines for Master's programs without restricted admission: applicants from other countries apply December 1–March 1 for winter semester and June 1–September 1 for summer semester. Program-specific applicability is not stated.",
+    "portal": "https://www.rwth-aachen.de/cms/root/studium/Vor-dem-Studium/~egg/Bewerbung-um-einen-Studienplatz/lidx/1",
+    "tuition_non_eu_eur": null,
+    "semester_fee_note": "",
+    "ielts_min": null,
+    "toefl_min": null,
+    "language_requirement": "",
+    "gre_policy": "unknown",
+    "gre_requirement": "",
+    "aps_required": true,
+    "notes": "The listed program page identifies the course as being phased out; new students starting in the first semester are no longer eligible. It advises applicants interested in a higher core semester to contact departmental advising. Subject prerequisites and an aptitude procedure are not stated.",
+    "url": "https://www.rwth-aachen.de/cms/root/studium/Vor-dem-Studium/Studiengaenge/Liste-Aktuelle-Studiengaenge/Studiengangbeschreibung/~bnhn/Informatik-M-Sc/?lidx=1",
+    "source_type": "llm_extracted",
+    "verified_at": "2026-11-23"
+  },
+  {
+    "id": "stuttgart-cs",
+    "university": "University of Stuttgart",
+    "name": "Computer Science",
+    "city": "Stuttgart",
+    "state": "Baden-Württemberg",
+    "field": "Computer Science",
+    "degree": "M.Sc.",
+    "ects": null,
+    "duration_semesters": 4,
+    "teaching_language": [
+      "German"
+    ],
+    "intakes": [
+      "WS",
+      "SS"
+    ],
+    "deadline_ws": null,
+    "deadline_ss": null,
+    "deadline_note": "The program page lists winter and summer starts but does not provide application dates. The university notes that international Master's programs may have special deadlines.",
+    "portal": "C@MPUS",
+    "tuition_non_eu_eur": null,
+    "semester_fee_note": "Fees and charges must be paid for enrollment; no amount is stated.",
+    "ielts_min": null,
+    "toefl_min": null,
+    "language_requirement": "The program's teaching language is German; no specific language test or score is stated.",
+    "gre_policy": "unknown",
+    "gre_requirement": "No GRE requirement is stated.",
+    "aps_required": true,
+    "notes": "Applicants need a Bachelor's degree in computer science or a related field and an interest in scientific work. Applicants from related fields may be admitted with conditions, normally one or two foundation or core computer science modules.",
+    "url": "https://www.uni-stuttgart.de/en/study/study-programs/Computer-Science-M.Sc./",
+    "source_type": "llm_extracted",
+    "verified_at": "2026-11-23"
+  }
+]

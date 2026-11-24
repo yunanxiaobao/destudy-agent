@@ -1,0 +1,41 @@
+services:
+  web:
+    build: .
+    container_name: destudy-web
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      - HF_HOME=/cache/huggingface
+    volumes:
+      - ./data:/app/data
+      - ./evaluation/results:/app/evaluation/results
+      - hf_cache:/cache/huggingface
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8501/_stcore/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  mcp:
+    build: .
+    container_name: destudy-mcp
+    profiles: ["mcp"]
+    command: ["python", "-m", "mcp_server.server", "--http"]
+    ports:
+      - "8765:8765"
+    env_file:
+      - .env
+    environment:
+      - MCP_HOST=0.0.0.0
+      - MCP_PORT=8765
+      - HF_HOME=/cache/huggingface
+    volumes:
+      - ./data:/app/data
+      - hf_cache:/cache/huggingface
+    restart: unless-stopped
+
+volumes:
+  hf_cache:

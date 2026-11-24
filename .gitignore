@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.env
+data/raw/
+data/qdrant/
+data/chunks.jsonl
+data/profile.json
+data/programs.db
+data/daad_programs.json
+data/traces.jsonl
+evaluation/results/
+.pytest_cache/
+.DS_Store
+.agents/
+.claude/
+*.tar.gz

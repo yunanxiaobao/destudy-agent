@@ -1,0 +1,8 @@
+{"question": "海德堡大学（Heidelberg University）2027年冬季计算机硕士的 GRE 豁免最低分和面试地点在哪里？", "reason": "Heidelberg CS is not crawled in the RAG corpus"}
+{"question": "德国驻成都总领事馆 APS 审核面谈的加急通道费用是多少人民币？", "reason": "No Chengdu APS office / expedited fee exists in crawled APS pages"}
+{"question": "申请 TU Darmstadt 计算机硕士是否必须缴纳每学期 4,000 欧元的非欧盟学费？", "reason": "Hesse/TU Darmstadt does not charge 4,000 EUR tuition (trick premise; should reject or state not in sources)"}
+{"question": "慕尼黑大学（LMU Munich）量子计算硕士的 2027 年夏季入学网申密码找回电话是多少？", "reason": "LMU Quantum Computing is not in the knowledge base"}
+{"question": "德国留学签证现在是否已经全面取消了自保金（Sperrkonto）要求，只需提供国内信用卡额度证明即可？", "reason": "False premise not supported by sources"}
+{"question": "亚琛工业大学（RWTH Aachen）2027年计算机硕士申请是否需要提交至少两封中国院士的纸质推荐信？", "reason": "Non-existent policy"}
+{"question": "弗莱堡大学计算机硕士是否接受大学英语六级（CET-6）550分作为 C1 英语证明？", "reason": "CET-6 is not accepted by Freiburg"}
+{"question": "在德国波恩大学申请生物信息学硕士时，2027年新增的线上编程机考平台叫什么名字？", "reason": "Bonn Bioinformatics not in the knowledge base"}
